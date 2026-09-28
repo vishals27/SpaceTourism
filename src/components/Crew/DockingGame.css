@@ -1,0 +1,147 @@
+.docking-game-card {
+  background: rgba(11, 13, 23, 0.75);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(16px);
+  border-radius: 16px;
+  padding: 1.8rem;
+  margin-top: 2.5rem;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+
+.game-badge {
+  background: rgba(0, 210, 255, 0.15);
+  color: #00d2ff;
+  padding: 0.2rem 0.6rem;
+  border-radius: 20px;
+  border: 1px solid rgba(0, 210, 255, 0.3);
+  display: inline-block;
+  margin-bottom: 0.5rem;
+}
+
+.game-desc {
+  color: hsl(var(--blue));
+  margin: 0.5rem 0 1.5rem;
+}
+
+.game-stage {
+  min-height: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 12px;
+  border: 1px dashed rgba(255, 255, 255, 0.2);
+  padding: 1.5rem;
+}
+
+.stage-content {
+  width: 100%;
+}
+
+.stage-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  animation: floatIcon 3s ease-in-out infinite alternate;
+}
+
+@keyframes floatIcon {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-12px); }
+}
+
+.game-btn {
+  background: linear-gradient(135deg, #00d2ff, #4ef0d0);
+  color: #0b0d17;
+  border: none;
+  font-weight: 700;
+  padding: 0.8rem 1.8rem;
+  border-radius: 30px;
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(0, 210, 255, 0.4);
+  transition: all 0.3s ease;
+  margin-top: 1rem;
+}
+
+.game-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 25px rgba(78, 240, 208, 0.6);
+}
+
+.waiting-box, .ready-box {
+  cursor: pointer;
+  padding: 2rem;
+  border-radius: 12px;
+  user-select: none;
+}
+
+.waiting-box {
+  background: rgba(255, 107, 107, 0.1);
+  border: 1px solid rgba(255, 107, 107, 0.3);
+}
+
+.ready-box {
+  background: rgba(78, 240, 208, 0.2);
+  border: 2px solid #4ef0d0;
+  box-shadow: 0 0 30px rgba(78, 240, 208, 0.5);
+}
+
+.pulse-indicator {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin: 0 auto 1rem;
+}
+
+.pulse-indicator.red {
+  background: #ff6b6b;
+  box-shadow: 0 0 20px #ff6b6b;
+  animation: blinkRed 1s infinite alternate;
+}
+
+.pulse-indicator.green {
+  background: #4ef0d0;
+  box-shadow: 0 0 30px #4ef0d0;
+  animation: blinkGreen 0.3s infinite alternate;
+}
+
+@keyframes blinkRed {
+  0% { opacity: 0.4; }
+  100% { opacity: 1; }
+}
+
+@keyframes blinkGreen {
+  0% { transform: scale(0.9); }
+  100% { transform: scale(1.2); }
+}
+
+.green-text {
+  color: #4ef0d0;
+  text-shadow: 0 0 15px rgba(78, 240, 208, 0.6);
+}
+
+.red-text {
+  color: #ff6b6b;
+}
+
+.rank-badge {
+  display: inline-block;
+  padding: 0.3rem 0.8rem;
+  border-radius: 20px;
+  border: 1px solid;
+  font-weight: bold;
+  font-size: 0.85rem;
+  margin-bottom: 0.5rem;
+}
+
+.unit-ms {
+  font-size: 1.5rem;
+  color: hsl(var(--blue));
+}
+
+.result-box-game {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}

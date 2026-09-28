@@ -1,0 +1,81 @@
+body{
+    background-position:bottom;
+    background-size: cover;
+    background-image: url('../../assets/home/background-home-mobile.jpg');
+}
+
+@media (min-width: 30rem) {
+    body{
+        background-image: url('../../assets/home/background-home-tablet.jpg');
+    }
+}
+
+@media (min-width: 45rem) {
+    body{
+        background-position:right;
+        background-image: url('../../assets/home/background-home-desktop.jpg');
+    }
+}
+
+.home-container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.grid-container-home {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    align-items: center;
+    margin-top: 3rem;
+}
+
+@media (min-width: 55rem) {
+    .grid-container-home {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.home-intro {
+    max-width: 550px;
+}
+
+.home-quick-actions {
+    margin-top: 2rem;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.galaxy-cta-btn {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.8rem 1.6rem;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 700;
+    background: linear-gradient(135deg, rgba(78, 240, 208, 0.2), rgba(0, 210, 255, 0.2));
+    border: 1px solid #4ef0d0;
+    color: white;
+    box-shadow: 0 4px 20px rgba(78, 240, 208, 0.25);
+    transition: all 0.3s ease;
+}
+
+.galaxy-cta-btn:hover {
+    transform: translateY(-2px) scale(1.03);
+    background: #4ef0d0;
+    color: #0b0d17;
+    box-shadow: 0 6px 25px rgba(78, 240, 208, 0.5);
+}
+
+
+.center-explore {
+    justify-content: center;
+    align-items: center;
+}
+
+.d-block{
+    display: block;
+}
+
+

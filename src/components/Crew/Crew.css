@@ -1,0 +1,68 @@
+body{ 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left;
+    background-image: url(../../assets/crew/background-crew-mobile.jpg);
+}
+
+@media(min-width: 35rem){
+    body{
+        background-image: url(../../assets/crew/background-crew-tablet.jpg);
+    }
+}
+
+@media(min-width: 45rem){
+    body{
+        background-image: url(../../assets/crew/background-crew-desktop.jpg);
+        overflow-y: auto;
+    }
+}
+
+.grid-container-crew{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    align-items: center;
+}
+
+@media(min-width: 45rem){
+    .grid-container-crew {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.crew-info {
+    text-align: left;
+}
+
+.crew-info > .positions {
+    color: hsl(var(--blue) / 0.5);
+    margin-bottom: 0.5rem;
+}
+
+.crew-info > p {
+    color: hsl(var(--blue) / 0.9);
+    margin: 1rem 0 2rem;
+}
+
+.crew-image-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.crew-img {
+    max-height: 450px;
+    object-fit: contain;
+    filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.5));
+    transition: transform 0.4s ease;
+}
+
+.crew-img:hover {
+    transform: scale(1.03);
+}
+
+.dot-indicators {
+    margin-top: 2rem;
+    gap: 1rem;
+}

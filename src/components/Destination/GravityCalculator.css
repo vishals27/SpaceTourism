@@ -1,0 +1,161 @@
+.gravity-calculator-card {
+  background: rgba(11, 13, 23, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(16px);
+  border-radius: 16px;
+  padding: 1.8rem;
+  margin-top: 2rem;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+  transition: border-color 0.3s ease;
+}
+
+.gravity-calculator-card:hover {
+  border-color: rgba(208, 214, 249, 0.4);
+}
+
+.calc-badge {
+  background: rgba(78, 240, 208, 0.15);
+  color: #4ef0d0;
+  padding: 0.2rem 0.6rem;
+  border-radius: 20px;
+  border: 1px solid rgba(78, 240, 208, 0.3);
+  display: inline-block;
+  margin-bottom: 0.5rem;
+}
+
+.calc-desc {
+  color: hsl(var(--blue));
+  margin: 0.5rem 0 1.2rem;
+}
+
+.input-group label {
+  color: hsl(var(--blue));
+  display: block;
+  margin-bottom: 0.4rem;
+}
+
+.slider-box {
+  align-items: center;
+  gap: 1rem;
+}
+
+.weight-slider {
+  flex-grow: 1;
+  accent-color: #4ef0d0;
+  cursor: pointer;
+}
+
+.weight-display {
+  min-width: 90px;
+  text-align: right;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.unit-toggle {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: white;
+  border-radius: 6px;
+  padding: 0.1rem 0.4rem;
+  font-size: 0.8rem;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.unit-toggle:hover {
+  background: rgba(255, 255, 255, 0.25);
+}
+
+.calc-results {
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin: 1.2rem 0;
+}
+
+.result-box {
+  background: rgba(255, 255, 255, 0.04);
+  padding: 1rem;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.result-label {
+  color: hsl(var(--blue));
+  display: block;
+  margin-bottom: 0.3rem;
+  font-size: 0.85rem;
+}
+
+.result-value {
+  color: #ffffff;
+}
+
+.unit-label {
+  font-size: 1.2rem;
+  color: hsl(var(--blue));
+}
+
+.jump-simulator-container {
+  margin-top: 1.5rem;
+  text-align: center;
+  position: relative;
+  padding-top: 3rem;
+}
+
+.astronaut-character {
+  font-size: 2.2rem;
+  display: inline-block;
+  transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.astronaut-character.jumping {
+  animation: zeroGJump 1.2s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+@keyframes zeroGJump {
+  0% { transform: translateY(0) rotate(0deg); }
+  50% { transform: translateY(-70px) rotate(180deg) scale(1.15); }
+  100% { transform: translateY(0) rotate(360deg); }
+}
+
+.surface-line {
+  border-top: 2px dashed rgba(255, 255, 255, 0.2);
+  margin: 0.5rem 0 1rem;
+  position: relative;
+}
+
+.surface-line span {
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #0b0d17;
+  padding: 0 0.5rem;
+  font-size: 0.75rem;
+  color: hsl(var(--blue));
+  text-transform: uppercase;
+}
+
+.jump-btn {
+  background: linear-gradient(135deg, rgba(78, 240, 208, 0.2), rgba(208, 214, 249, 0.2));
+  border: 1px solid #4ef0d0;
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.jump-btn:hover {
+  background: #4ef0d0;
+  color: #0b0d17;
+  box-shadow: 0 0 15px rgba(78, 240, 208, 0.5);
+}
+
+.fun-fact {
+  margin-top: 1rem;
+  color: rgba(255, 255, 255, 0.7);
+  font-style: italic;
+}
