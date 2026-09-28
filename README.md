@@ -1,6 +1,6 @@
 # Space Tourism
 
-Welcome to the Space Tourism project! This is a CSS-intensive project that showcases the potential of modern web design techniques. The project is fully responsive, ensuring a seamless experience across different devices. [Live Demo](https://spacetourism-iota.vercel.app/SpaceTourism/)
+Welcome to the Space Tourism project! This is a CSS-intensive project that showcases the potential of modern web design techniques. The project is fully responsive, ensuring a seamless experience across different devices. [Live Demo](https://space-tourism-kappa-taupe.vercel.app/)
 
 ![Project Screenshot](/demo.png)
 
